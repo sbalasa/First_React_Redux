@@ -6,12 +6,14 @@ import Comment from "./Comment";
 import CheckBox from "./CheckBox";
 import Movie from "./Movie";
 import reportWebVitals from './reportWebVitals';
+import Board from "./Board";
 
 ReactDOM.render(
     <React.StrictMode>
         <Movie title="Titanic" genre="romance" />
         <Comment>This is my First React.js repo</Comment>
         <CheckBox/>
+        <Board />
         <App />
     </React.StrictMode>,
     document.getElementById('root')
