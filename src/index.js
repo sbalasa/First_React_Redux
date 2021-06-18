@@ -13,7 +13,6 @@ import allReducers from "./reducers";
 import User from "./components/User";
 
 const store = createStore(allReducers);
-console.log(store);
 
 ReactDOM.render(
     <React.StrictMode>
