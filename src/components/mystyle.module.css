@@ -5,3 +5,9 @@
   text-align: center;
   border: 5px solid whitesmoke;
 }
+
+ul {
+   width: 20%;
+   margin: 0 auto;
+   text-align: center;
+}

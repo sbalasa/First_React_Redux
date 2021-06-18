@@ -1,4 +1,4 @@
-const usersReducer = function() {
+function usersReducer() {
     return [
         {
             id: 1,
