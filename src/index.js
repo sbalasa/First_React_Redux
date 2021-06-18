@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Comment from "./Comment";
-import CheckBox from "./CheckBox";
-import Movie from "./Movie";
+import App from './components/App';
+import Comment from "./components/Comment";
+import CheckBox from "./components/CheckBox";
+import Movie from "./components/Movie";
 import reportWebVitals from './reportWebVitals';
-import Board from "./Board";
+import Board from "./components/Board";
+import { createStore } from 'redux';
+import {Provider} from "react-redux";
+import allReducers from "./reducers";
+import User from "./components/User";
+
+const store = createStore(allReducers);
+console.log(store);
 
 ReactDOM.render(
     <React.StrictMode>
@@ -14,6 +21,9 @@ ReactDOM.render(
         <Comment>This is my First React.js repo</Comment>
         <CheckBox/>
         <Board />
+        <Provider store={store}>
+            <User />
+        </Provider>
         <App />
     </React.StrictMode>,
     document.getElementById('root')

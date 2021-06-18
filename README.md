@@ -1,4 +1,4 @@
-# My First React.js App
+# My First React.js and Redux.js App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
